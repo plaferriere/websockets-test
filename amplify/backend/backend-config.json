@@ -1,0 +1,131 @@
+{
+  "api": {
+    "websocketstest": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authwebsocketstest51a381d3"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AWS_IAM"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "websocketstest51a381d3": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_websocketstest51a381d3_allowUnauthenticatedIdentities": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    },
+    "AMPLIFY_auth_websocketstest51a381d3_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "websocketstest51a381d3"
+        }
+      ]
+    }
+  }
+}
